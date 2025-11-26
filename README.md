@@ -18,8 +18,6 @@
   
   <br />
 
-  <img src="https://via.placeholder.com/800x400.png?text=Add+Your+Dashboard+Screenshot+Here" alt="Dashboard Preview" width="100%" />
-
 </div>
 
 <br />
