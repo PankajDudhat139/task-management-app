@@ -10,6 +10,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import LockIcon from '@mui/icons-material/Lock';
 import BadgeIcon from '@mui/icons-material/Badge';
 import HowToRegIcon from '@mui/icons-material/HowToReg';
+import config from '../config';
 
 const Signup = () => {
   const [formData, setFormData] = useState({ username: '', email: '', password: '', role: 'user' });
@@ -24,7 +25,7 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/auth/register', formData);
+      await axios.post(`${config.API_URL}/auth/register`, formData);
       navigate('/login');
     } catch (err) {
       setError(err.response?.data?.message || 'Signup failed. Try again.');
