@@ -1,0 +1,20 @@
+# Dependencies (The most important part)
+node_modules/
+*/node_modules/
+
+# Environment Variables (Never commit these!)
+.env
+*/.env
+
+# Optional: Ignore package-lock (Only if you really want to)
+# Remove the # below to ignore it, but it's usually better to keep it.
+# package-lock.json
+# */package-lock.json
+
+# System Files (Mac/Windows junk)
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
